@@ -1,0 +1,17 @@
+name: test pr with commits
+
+on: 
+  pull_request:
+    types:  opened
+
+jobs:
+  test-pr-with-commits:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Test our own action
+      uses: ./ #felix-schaipp/pr-with-commits@main
+      id: pr        
+    # - name: Check the output
+    #   run: |  #! TOOD add possible output
+    #     echo "${{ steps.pr.outputs. }}" 

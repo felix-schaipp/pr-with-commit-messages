@@ -1,0 +1,20 @@
+name: 'PR with commit messages'
+author: Felix Schaipp <felix.schaipp@gmail.com>
+description: 'Add all your commit messages to your pull request'
+branding:
+  icon: 'git-pull-request'
+  color: 'purple'
+inputs:
+  commit-depth:
+    description: 'Control how many of the latest commits you wanna to your pull reuqest'
+    required: false
+    default: null  
+outputs:
+  message:
+    description: 'Get a message with insides from this action'
+runs:
+  using: 'docker'
+  image: 'dockerfile'
+  args:
+    - ${{ inputs.channel}}
+    - ${{ inputs.buildNumber}}

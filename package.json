@@ -1,0 +1,17 @@
+{
+    "name": "pr-with-commit-messages",
+    "version": "1.0.0",
+    "description": "Github action to populate your pull request with all commit messages from the branch to merge from",
+    "repository": "git@github.com:felix-schaipp/pr-with-commit-messages.git",
+    "author": "Felix Schaipp <felix.schaipp@gmail.com>",
+    "license": "MIT",
+    "private": false,
+    "keywords": [
+      "github",
+      "actions",
+      "pull request",
+      "pr",
+      "commits",
+      "commit messages"
+    ]
+  }
