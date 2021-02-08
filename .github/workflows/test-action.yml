@@ -10,7 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: build latest
-        run: yarn build
+        run: |
+          yarn
+          yarn build
       - name: Test our own action
         uses: felix-schaipp/pr-with-commit-messages@develop
         id: pr
