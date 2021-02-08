@@ -1,5 +1,5 @@
 import * as core from '@actions/core'
-import * as github from '@actions/github' 
+import * as github from '@actions/github'
 
 async function main(): Promise<void> {
   try {
@@ -17,8 +17,7 @@ async function main(): Promise<void> {
     // get all commit messages
     // format commit messages for output
     // post the messages to the pr
-    core.debug('test')  
-    
+    core.debug('test')
   } catch (error) {
     core.setFailed(error.message)
   }
