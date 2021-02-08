@@ -8,13 +8,10 @@ inputs:
   commit-depth:
     description: 'Control how many of the latest commits you wanna to your pull reuqest'
     required: false
-    default: null  
+    default: null
 outputs:
   message:
     description: 'Get a message with insides from this action'
 runs:
-  using: 'docker'
-  image: 'dockerfile'
-  args:
-    - ${{ inputs.channel}}
-    - ${{ inputs.buildNumber}}
+  using: 'node12'
+  main: 'lib/main.js'
