@@ -15,6 +15,3 @@ outputs:
 runs:
   using: 'node12'
   main: 'dist/main.js'
-  args:
-    - ${{ inputs.channel}}
-    - ${{ inputs.buildNumber}}
